@@ -87,10 +87,12 @@ checaResposta: function(user){
         
         console.log("Certa");
         this.Totalpontos++;
+        this.mostraresposta(true);
         
     } else {
         
         console.log("Errada");
+        this.mostraresposta(false);
         
     }
     
@@ -105,7 +107,37 @@ atualizaPontos: function(){
     let scoreDiv = document.getElementById('pontos');
     scoreDiv.textContent = `Points: ${this.Totalpontos}`; 
     
-}    
+},    
+
+//Mostra qual é a resposta correta    
+mostraresposta: function(correto){
+    
+    let resultDiv = document.getElementById('result');
+    let result = '';
+    
+    //formatar como a mensagem será exibida
+    if(correto == true){
+        
+        result = 'Resposta Correta!';
+        
+    } else {
+        
+        //obtendo a questão atual
+        let pergunta = perguntas[this.Atualpos];
+        
+        //obtendo o indice da resposta correta da questão atual
+        let cindice = pergunta.correta;
+        
+        //obtendo o resto da resposta correta da questão atual
+        let ctexto = pergunta.alternativas[cindice];
+        
+        result = `Incorreto! Resposta Correta: ${ctexto}`;
+        
+    }
+    
+    resultDiv.textContent = result;
+    
+}
     
 }
 
