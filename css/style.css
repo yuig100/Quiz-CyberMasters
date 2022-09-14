@@ -1,0 +1,139 @@
+body {
+    background: white;
+    font-family: Nunito;
+    text-align: center; 
+}
+
+img {
+    max-width: 10%;
+    max-height: 10%;
+}
+/**/
+form img{
+
+    position: absolute;
+    top: 60%;
+    right: 25px;  
+    cursor: pointer;
+
+}
+
+/**/
+.logo{
+
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.button{
+    background-color: #8b82ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    width: 150px;
+    margin-bottom: 10px;
+    box-shadow: 10px;
+
+}
+.button-disable{
+
+    background-color: #9a9a9a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    width: 150px;
+    margin-bottom: 10px;
+    box-shadow: 10px;
+
+}
+
+.barra{
+
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #f7ceec;
+    margin: auto;
+}
+
+.barra div{
+
+    height: 100%;
+    border-radius: 10px;
+    background-color: #feaded;
+    transition: all 300ms; 
+
+}
+
+.table{
+
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    border: 10px;
+    border-color: aqua;
+
+}
+
+td{
+
+    text-align: left;
+    border-style: solid;
+    border-width: 2px;
+}
+
+li img{
+
+    width: 100%;
+    height: 40px;
+
+}
+
+.ativo{
+
+
+}
+
+.nome{
+
+    color: black;
+
+}
+
+.button-right{
+
+    background-color: #8b82ff;
+    border: none;
+    color: white;
+    padding: 10px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    width: 98px;
+    margin-bottom: 10px;
+    box-shadow: 10px;
+    vertical-align: middle;
+    float: left;
+    margin-left: 5px;
+
+}
